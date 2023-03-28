@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div<{ scroll: boolean }>`
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,9 +11,9 @@ export const Container = styled.div<{ scroll: boolean }>`
   align-items: center;
   justify-content: center;
   padding: 0 3.1rem;
-  transition: 0.3s ease-in-out;
-  background-color: ${({ scroll }) => (scroll ? 'white' : 'none')};
-  border-bottom: 1px solid ${props => props.theme.colors.gray};
+  transition: background-color 0.3s ease-in-out;
+  background-color: ${({ scroll }) => (scroll ? props => props.theme.colors.white : 'none')};
+  border-bottom: 1px solid ${({ scroll }) => (scroll ? props => props.theme.colors.gray7 : 'none')};
 
   > .header_wrapper {
     display: flex;
@@ -28,7 +29,8 @@ export const Container = styled.div<{ scroll: boolean }>`
       gap: 2.5rem;
 
       > .header_menu_item {
-        color: ${props => props.theme.colors.black};
+        color: ${({ scroll }) =>
+          scroll ? props => props.theme.colors.black : props => props.theme.colors.white};
         font-size: 0.9rem;
         font-weight: 900;
         letter-spacing: -1px;
@@ -40,13 +42,16 @@ export const Container = styled.div<{ scroll: boolean }>`
       }
 
       > .header_logo {
-        fill: ${props => props.theme.colors.black};
+        color: ${({ scroll }) =>
+          scroll ? props => props.theme.colors.black : props => props.theme.colors.white};
         margin-right: 1.5rem;
         cursor: pointer;
       }
     }
 
     > .header_list {
+      color: ${({ scroll }) =>
+        scroll ? props => props.theme.colors.black : props => props.theme.colors.white};
       display: none;
     }
   }
