@@ -4,7 +4,7 @@
   viewBox="0 0 175 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
-  class="header__logo"
+  class="header_logo"
 >
   <path d="M3.09476 6.39206H0.65155V18.3983H3.09476V6.39206Z" fill="currentColor"></path>
   <path
