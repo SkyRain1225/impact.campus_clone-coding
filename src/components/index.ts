@@ -1,1 +1,2 @@
-export { default as HelloWorld } from './HelloWorld/HelloWorld';
+export { default as Header } from './Header/Header';
+export { default as Footer } from './Footer/Footer';

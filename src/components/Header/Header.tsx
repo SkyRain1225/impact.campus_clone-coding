@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 
 import { ListIcon, Logo } from '~/assets/svg';
 
-import * as S from './HelloWorld.styled';
+import * as S from './Header.styled';
 
-const HelloWorld = () => {
+const Header = () => {
   return (
     <S.Container>
       <div className="header_wrapper">
@@ -25,4 +25,4 @@ const HelloWorld = () => {
   );
 };
 
-export default HelloWorld;
+export default Header;

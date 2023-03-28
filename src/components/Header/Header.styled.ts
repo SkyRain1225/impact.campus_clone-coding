@@ -23,6 +23,7 @@ export const Container = styled.div`
       gap: 2.5rem;
 
       > .header_menu_item {
+        color: ${props => props.theme.colors.black};
         font-size: 0.9rem;
         font-weight: 900;
         letter-spacing: -1px;
@@ -34,6 +35,7 @@ export const Container = styled.div`
       }
 
       > .header_logo {
+        fill: ${props => props.theme.colors.black};
         margin-right: 1.5rem;
         cursor: pointer;
       }

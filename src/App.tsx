@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 
-import { HelloWorld } from '~/components';
+import { Footer, Header } from '~/components';
 import { GlobalStyled } from '~/styles/GlobalStyled';
 import { theme } from '~/styles/themes';
 
@@ -14,7 +14,8 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyled />
-      <HelloWorld />
+      <Header />
+      <Footer />
     </ThemeProvider>
   );
 };
