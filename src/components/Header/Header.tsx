@@ -5,8 +5,25 @@ import { ListIcon, Logo } from '~/assets/svg';
 import * as S from './Header.styled';
 
 const Header = () => {
+  const [isScroll, setIsScroll] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 1) {
+      setIsScroll(true);
+    } else {
+      setIsScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <S.Container>
+    <S.Container scroll={isScroll}>
       <div className="header_wrapper">
         <div className="header_menu_list">
           <Logo />

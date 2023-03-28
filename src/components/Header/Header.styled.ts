@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div<{ scroll: boolean }>`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 3.1rem;
-  background-color: ${props => props.theme.colors.white};
+  transition: 0.3s ease-in-out;
+  background-color: ${({ scroll }) => (scroll ? 'white' : 'none')};
   border-bottom: 1px solid ${props => props.theme.colors.gray};
 
   > .header_wrapper {

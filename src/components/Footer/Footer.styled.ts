@@ -5,7 +5,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
-  height: 360px;
+  /* height: 360px; */
+  height: 300rem;
   background-color: ${props => props.theme.colors.gray};
 
   > .footer_wrapper {
