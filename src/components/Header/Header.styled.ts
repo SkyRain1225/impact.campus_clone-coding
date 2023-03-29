@@ -12,6 +12,7 @@ export const Container = styled.div<{ scroll: boolean }>`
   justify-content: center;
   padding: 0 3.1rem;
   transition: background-color 0.3s ease-in-out;
+
   background-color: ${({ scroll }) => (scroll ? props => props.theme.colors.white : 'none')};
   border-bottom: 1px solid ${({ scroll }) => (scroll ? props => props.theme.colors.gray7 : 'none')};
 
