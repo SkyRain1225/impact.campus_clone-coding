@@ -1,12 +1,14 @@
 import React from 'react';
 
+import { ProgramLists, ShowCase } from '~/components/Contents';
+
 import * as S from './Contents.styled';
-import ShowCase from './ShowCase/ShowCase';
 
 const Contents = () => {
   return (
     <S.Container>
       <ShowCase />
+      <ProgramLists />
     </S.Container>
   );
 };
