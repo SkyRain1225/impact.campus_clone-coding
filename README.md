@@ -1,33 +1,8 @@
-# vite-react-ts-template
+# impact.campus_clone-coding
 
-A template for using react quickly.
+https://www.impactcampus.kr/
+해당 사이트를 클론 코딩했습니다.
 
-## Overview
+# Screenshots
 
-- Bundle tool: [`vite`](https://vitejs.dev/)
-- Frontend framework: `react` + `typescript`
-- Code style: `eslint` + `prettier` + [`@trivago/prettier-plugin-sort-imports`](https://github.com/trivago/prettier-plugin-sort-imports)
-- Router: [`react-router-dom v6`](https://reactrouter.com/docs/en/v6)
-- CSS: [`styled-components`](https://styled-components.com/)
-- State management library: [`recoil`](https://recoiljs.org/)
-- Date: [`dayjs`](https://day.js.org/)
-
-## Getting Started
-
-#### dev mode
-
-```bash
-yarn dev
-```
-
-#### vite build
-
-```bash
-yarn build
-```
-
-#### preview
-
-```bash
-yarn preview
-```
+![main](https://user-images.githubusercontent.com/97310823/228692878-2e47cb70-f2e2-4767-9e60-8c29a50b34fc.png)
